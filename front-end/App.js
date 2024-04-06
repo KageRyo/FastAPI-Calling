@@ -52,7 +52,7 @@ export default class TextInputSample extends Component {
       type: 'text/csv',
     });
     console.log('FormData:', formData);
-    axios.post('http://127.0.0.1:8000/uploadfile', formData, {headers : {
+    axios.post('http://192.168.0.148:8000/uploadfile/', formData, {headers : {
       'Accept': 'application/json',
       'content-Type': 'multipart/form-data',
     }})
@@ -62,6 +62,11 @@ export default class TextInputSample extends Component {
       .catch(error => {
         console.error("Error sending data: ", error);
       });
+
+      axios.get('http://192.168.0.148:8000/')
+        .then(response => {
+          console.log(response.data);
+        })
   };
 
   render() {
