@@ -3,7 +3,7 @@ Using React-Native to send numeric data to FastAPI.
 透過 React-Native 發送數值資料到 FastAPI。  
  
 # 資料路徑
-+ RecatNative（JavaScript）前端：請見 [front-end](front-end) 。
++ React Native（JavaScript）前端：請見 [front-end](front-end) 。
 + FastAPI（Python）後端：請見 [back-end](back-end) 。
 
 ## 貢獻
